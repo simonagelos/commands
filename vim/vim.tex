@@ -1,0 +1,166 @@
+%%% Testing:spacing
+\documentclass[12pt]{article}
+
+
+%\usepackage[showboxes]{textpos}
+
+\hoffset=0pt
+\voffset=0pt
+\oddsidemargin=0pt
+\topmargin=0pt
+\headheight=0pt
+\headsep=0pt
+
+\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=2cm, ]{geometry} 
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{sistyle}
+\usepackage{textpos}
+
+\setlength{\TPHorizModule}{50pt}
+\setlength{\TPVertModule}{\TPHorizModule}
+
+\pagestyle{empty}
+
+\title{Dummi}
+
+\begin{document}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{30pt}
+\setlength{\baselineskip}{20pt}
+
+% Make sure that all text appears precisely where it ought to.  The
+% above dimensions mean that text appears in round-number locations.
+%
+% The \showbox puts detailed calculations in the log file
+%
+% Output of 'dvireport -F -up t5.dvi':
+% c 97[a] 0,20pt
+% c 121[y] 4.72223,20pt
+% c 98[b] 0,28.8889pt
+% c 121[y] 5.27777,28.8889pt
+% c 99[c] 50,76.25pt
+% c 100[d] 0,70pt
+% c 121[y] 5.55556,70pt
+%
+% The most important thing is that `a' and `d' are 50pt
+% apart, \parskip+\baselineskip
+%
+% This test may not currently be working (2005 August 30).  There's an
+% extra 30pt (\parskip) appearing before the by and cy in their boxes,
+% which clearly isn't present in the t5.correct.dvi.  Ought it to be
+% there?  Have I done something (when?) which has caused this to
+% spuriously appear?
+
+
+\showboxdepth=8
+\showboxbreadth=8
+%\documentclass[12pt]{article}
+
+%\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=2cm, ]{geometry} 
+%\usepackage{tikz}
+%\usepackage{graphicx}
+
+
+\begin{itemize}
+
+    \item h moves the cursor one character to the left.w
+    \item k moves the cursor up one line.
+    \item j moves the cursor down one line.
+    \item l moves the cursor one character to the right.
+    \item 0 moves the cursor to the beginning of the line.
+    \item \$ moves the cursor to the end of the line.
+    \item w move forward one word.
+    \item b move backward one word.
+    \item G move to the end of the file.
+    \item äs move to next misspelled word
+    \item \$s move to last misspelled word
+    \item gg move to the beginning of the file.
+    \item `. move to the last edit.
+    \item A insert at the end of the line
+    \item e  Puts the cursor at the end of a word
+    \item ctrl + u  fast upwards
+    \item ctrl + d  fast downwards
+    \item ctrl + e  scroll down without cursor
+    \item ctrl + p in commandmode will go history upwards
+    \item crtl + n "                            " down
+    \item d starts the delete operation.
+    \item x delets current char
+    \item dd will delete the hole line.
+    \item dw will delete a word.
+    \item d0 will delete to the beginning of a line.
+    \item d\$ will delete to the end of a line.
+    \item dgg will delete to the beginning of the file.
+    \item dG will delete to the end of the file.
+    \item u will undo the last operation.
+    \item Ctrl-r will redo the last undo. \\
+    \item gt - move to the next tab
+    \item gT - move to the previous tab
+    \item \#gt - move to a specific tab number (e.g. 2gt takes you to the second tab)
+    \item =G - indents code below
+
+    \item - /*text* search for *text* in the document, going forward.
+    \item n move the cursor to the next instance of the text from the last search. this will wrap to the beginning of the document.
+    \item n move the cursor to the previous instance of the text from the last search.
+    \item ?*text* search for *text* in the document, going backwards.
+    \item :\%s/*text*/*replacement text*/g search through the entire document for *text* and puts  *replacement text infront*. without text/g it replace
+    \item :\%s/text/replacment/g replace all text
+    \item :\%s/*text*/*replacement text*/gc search through the entire document and *confirm* before replacing text.
+    \item /+text to be searched | with n move forward trough words | N backwards
+    \item :nohl to stop marking text
+    \item z= on misspelt word for suggestens
+    \item zg add misspelt word to dictionary
+    \item zw say word i wrong  
+    \item s/textreplace/textsubtution [g\&](https://www.notion.so/g-4a820f8ef73f420580ed02d2b726782b) to replace text for one line and then all
+    \item noremap (inoremap, nnoremap, vnoremap) + "keytopress" + "what i does"  ignores ever other map 
+    \item autocmd "looks always what you write
+    \item Filetype + "filetype"  in what filetype the folowing wil happen
+    \item :! + command "makes commmand in terminal bvut beeing in vim
+    \item gt switches tabs
+    \item :setlocal spell spelllang=de sets spell checking in german local buffer with just :set it is global
+    \item :set nospell turns off spell checking
+    \item :"lineNumberStart","lineNumberEnd"s/\^/"replaceItem" /  puts on beggining of the lines between lineNUmberStart and Linenumberend the replaceItem, works with crl-V to
+    \item q: shows commandhistory that is executable
+    \item \^\$ represents brakes
+
+    \item v highlight one character at a time.
+    \item V highlight one line at a time.
+    \item V< to move selected lines to left.
+    \item V> to move selected lines to right.
+    \item Ctrl-V highlight by columns.
+    \item p paste text on the current line.
+    \item P paste before the cursor.
+    \item y yank text into the copy buffer.
+    \item y\$ yank till the end of the line.
+    \item `y\$` - Yank (copy) everything from the cursor to the end of the line.
+    \item `y\^` - Yank (copy) everything from the cursor to the start of the line.\\
+
+    \item :w  safe the file
+    \item :tabedit file - opens a new tab and will take you to edit "file"
+    \item :tabe "filename" opens file in same terminal 
+    \item :tabm i move tab to i beggining with 0
+    \item :tabm +i/-i move tab i related to position of tab
+    \item :tabs - list all open tabs
+    \item :tabclose - close a single tab
+    \item :w filename safe with new name
+    \item :q finish vim if no safe u have to ! for safe
+    \item :q! quit without safe
+    \item ZZ safe and quit
+    \item crl + x + f filenamecomplishen in vim
+    \item ;it textit{}
+    \item ;ib textbf{}
+    \item ;ig include graphics
+    \item ;sec ;sec* ;sub ;sub*
+    \item ;im itemize
+    \item ;cen center
+    \item ;tb table with [H]
+    \item ;bg begin something
+
+
+\end{itemize}
+
+
+\end{document}

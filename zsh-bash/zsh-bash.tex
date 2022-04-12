@@ -1,0 +1,200 @@
+%%% Testing:spacing
+\documentclass[12pt]{article}
+
+
+\usepackage{multicol}
+\usepackage{url}
+
+
+% for code snippits
+\usepackage{listings}
+
+\lstset{
+    numbersep=3pt,
+    keywordstyle=\color{blue},
+    commentstyle=\color{dkgreen},
+    stringstyle=\color{mauve},
+    breaklines=true,
+    numbers=left,
+    numberstyle=\scriptsize\color{black},
+    frame=none,
+    basicstyle = \small\ttfamily,
+    breaklines=true
+    breakatwhitespace=false,
+    columns=flexible,
+    xleftmargin=0.5cm,framesep=8pt,framerule=0pt,
+    aboveskip=3mm,
+    belowskip=3mm,
+}
+
+
+\hoffset=0pt
+\voffset=0pt
+\oddsidemargin=0pt
+\topmargin=0pt
+\headheight=0pt
+\headsep=0pt
+
+\usepackage[left=0cm, right=0cm, top=0cm, bottom=0cm, ]{geometry} 
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{sistyle}
+\usepackage{textpos}
+
+\usepackage{float}
+
+
+\setlength{\TPHorizModule}{50pt}
+\setlength{\TPVertModule}{\TPHorizModule}
+
+\pagestyle{empty}
+
+\title{Dummi}
+
+\begin{document}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{30pt}
+\setlength{\baselineskip}{20pt}
+
+
+
+
+\centering
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    Command & Fuction & Informations \\
+    \hline
+    sudo dpkg -i *.deb & install new kernil & do in directory with *.deb kernelfiles \\
+    \hline
+    ps & shows running processes & \\
+    \hline
+    ps -aux & show all running processes & \\
+    \hline
+    source .zshrc & loads file and settings from .bash\_alias are load & same vor zshalias idk name  \\
+    \hline
+    source .path & that inported library works & in directory with the Programm \\
+    \hline 
+    cp **. & cp path-setup to execute then source &\\
+    \hline
+    du -h filename & gibt grösse von filname aus & \\
+    \hline
+    sudo find "directory" -name '*.apk' & looks for file with .apk ending &\\
+    \hline 
+    sudo umount "full device name" & to unmount device & \\
+    \hline 
+    mkfs.fat -F32 /dev/PARTITION & to format partition &\\
+    \hline 
+    chmod +x "filename" & makes file executable &\\
+    \hline
+    upower -i `upower -e | grep 'BAT'` & to see batteryinformations &\\
+    \hline
+    mutool draw -R 90 -o 'new name'.pdf 'file'.pdf & to rotate clockwise 90 degre &\\
+    \hline 
+    wc -l "file" & counts lines in file &\\
+    \hline
+    ls -s & shows size of files &\\
+    \hline
+    pandoc input.md -o output.pdf & compiles Markdown files to pdf\\
+    \hline
+    apt-cache pkgnames "beginning of package name"& to see all awailable packages, in "" is optionel and shows just the packages starting with \\
+    \hline
+    pushd directory & go in directory \\
+    \hline 
+    popd & when pushd made first us can go back where u were befor \\
+    \hline
+    awk & usefull for for outputs \\
+    \hline 
+    xargs & takes output and puts behind the programm folwing \\
+    \hline
+    bluetoothctl & to connect to bluetooth devices \\
+    \hline
+    file "image" & shows some metadata like size and format \\
+    \hline
+    find . -type f -name "* *" | while read file; do mv "\$file" \${file// /\_}; done & finds files with space and replaces it with \\
+    \hline
+    perm directory & shows permition from directory \\
+    \hline
+     sudo update-alternatives --config python3 & to update python3 verion\\
+    \hline 
+
+
+\end{tabular}
+
+* \~/schulmaterial/efi/EigeneProjekte/inputoutputflanagan \\
+** \~/schulmaterial/efi/Eigene\_Projekte/inputOutputFlanagan/path-setup 
+
+
+\centering
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{Bash "Syntax"} \\
+    \hline
+    code & meaning & information\\
+    \hline
+    \$"something" & with \$ u access something & \$1 gets first input\\
+    \hline
+    ("Function") & inside () something like find or pwd gos &\\
+    \hline
+    {"Command"} & Command stands for like 1\#\#*/ & in compileInfo it cuts the filename \\
+    \hline
+    \${parameter\#pattern} & shortest match from pattern in parameter from beginning is deleted &\\
+    \hline 
+    \${parameter\#\#pattern} & longest match from pattern in parameter from beginning is deleted & \${1\#\#*/} deletes everything from input bevor the last / \\
+    \hline
+    \${parameter\%pattern} & like \# just from end &\\
+    \hline 
+    \${parameter\%\%pattern} & like \#\# just from the end &\\
+    \hline 
+    " text " & everything in "" will be like String and no commands except \$,',backslash & echo "pdflatex textdummit.tex" output pdflatex textdummi.tex \\
+    \hline
+    ' command/text ' & similar to "" but can use variables & echo "my variable value is '\$variable' " \\
+    \hline 
+    variable=5 & declaring variable as integer 5 & works like in python \\
+    \hline 
+    == != + - * / \% & operator like in java but has also other use &\\
+    \hline 
+    mutool draw -R 90 -o out.pdf Tenses.pdf & to rotate clockwise by 90 degree &\\
+    \hline 
+    ln -fs 'any dircetory' 'direcatory name in pwd' & creates directory linkt the new directory like a portal & \\
+    \hline 
+    > & to redirect output for example in a file & overrides existing file \\
+    \hline
+    >> & appends output into new director/file & doesn't override existing file \\
+    \hline
+
+
+\end{tabular}
+
+\lstset{language=sh}
+\begin{lstlisting} 
+if [condition]
+then
+    statement 
+fi
+
+if [condition 1]
+then 
+    Statement 1
+elif [condition 2]
+then
+    Statement 2
+else 
+    Statement 3
+fi
+
+\end{lstlisting}
+
+
+for more information of syntax
+{\url{https://www.gnu.org/software/bash/manual/bash.html#index-insert_002dcomment-_0028M_002d_0023_0029}}
+
+{\url{https://www.tutorialspoint.com/unix/unix-basic-operators.htm}}
+
+
+
+
+
+\end{document}

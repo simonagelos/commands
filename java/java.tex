@@ -1,0 +1,202 @@
+%%% Testing:spacing
+\documentclass[a4paper,12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+\hoffset=0pt
+\voffset=0pt
+\oddsidemargin=0pt
+\topmargin=0pt
+\headheight=0pt
+\headsep=0pt
+
+\usepackage[left=2cm, right=2cm, top=1.5cm, bottom=2cm, ]{geometry} 
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{sistyle}
+\usepackage{textpos}
+
+%for code
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+  texcl=true
+}
+
+\setlength{\TPHorizModule}{50pt}
+\setlength{\TPVertModule}{\TPHorizModule}
+
+\pagestyle{empty}
+
+\title{Dummi}
+
+\begin{document}
+
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{30pt}
+\setlength{\baselineskip}{20pt}
+
+
+\begin{lstlisting}
+// Syntax ""= in muss geschrieben werden []=wahlweise
+int x, y; //deklaliert x und y als intiger
+int x = 5, y = 7; //deklaliert und speicher die werte dazu
+final int x = 8 //bleibt immer 8
+x = X + 1
+// 3.14 double
+//3.14f float
+// 13E4  13*e4
+
+float f; int i;
+f=i; //erlaubt
+i=f; //verboten
+i=(int)f; //erlaubt, schneidet nachkommazeilen oder mehr ab
+f=1.0; //verboten weil 1.0 double ist
+f=1.0f; //ok
+//double + int //double
+//float + int //float
+//short + short //int
+//if (n!=0) x = x/n; // if (True) mach x =...
+
+if (x>y)
+	max = x;
+else 
+	max = y;
+// syntax "if" "(" Expresion ")" Statment ["else" Statment]
+if (x>y){    
+// fuer mehr Statements {} nennt sich Block
+	max = x;
+	System.out.println(x);
+}
+else 
+	max = y; 
+int x=0; // muss int oder float sein
+x++ //x=1 x++=>x+= oder x=x+1
+x-- // x=x-1 
+== //gleich
+!= // ungleich
+> //grösser
+< //kleiner
+>= //grööser oder gleich
+<= // kleiner oder gleich
+&& // und-Verknüpfung if (... and ... ==True) mach ...
+|| // oder-Verknüpfung
+!x //nicht-Verknüpfung
+x==True 
+!x==False
+boolean p, q;
+	p=false;
+	q = x<0;
+whileschleife
+i = 1;
+sum = 0;
+while (i<=n){   //schleifenbedingung //solange i<= n tu das...
+	sum = sum + i; //Schleifenrumpf
+	i += 1;   // "  "
+}
+do-schleife
+int n = In.readInt(); //Zahl von Tastatur
+do {
+	System.out.println(n%10);  // mach das... und wiederhole wenn..
+	n=n/10;
+} while (n>0);
+for-Schleifen
+sum = 0;
+for (i = 1; i <= n; i++ ) // 1. bestimmung einer Variablen, 
+	sum = sum + 1;		// 2.voraussetzung zur weiterführung 
+				// 3. veränderung der Vriable
+		    // "for" "(" [ForInit] ";" [Expression] ";" [ForUpdate]";")
+			   // ForInit = Assigment ("," Assigment)
+	int = 0;	   //         = Zahlen Typ deklarieren | Type n =.. ("," n=..)
+               // ForUpdate = Assigment ("," Assigment)
+			 
+for (;;){} //endlosschelife
+	if (..)break;  // Beendet die Schleife in der es sich befiendet
+
+hours_K = JOptionPane.showInputDialog("frage"); 
+//öffnet interaktive Fenster und speichert antwort in variable (parse geht auch)
+args[0].equals("String"); //vergleicht Input/Varible mit String
+
+void //nimmt keinen wert an. die methode nimmt keinen wert an kann auch nicht zurück geben
+
+static void "methodname"(){    //methodealggm.
+}
+
+static void numbers(int x,int y){     //methodenbeispiel
+	if (x>y) system.out.println(x);
+	else system.out.ptintln(y);
+}
+
+static int max(int y, int x){ //Funktion, kein void, gib eine Wert zurück, muss mit return enden
+	if (x>y) return y;
+	else return x;
+}
+ return //kann als break verwendet werden, springt aus der methode
+
+int[] a;  //Array a as int
+float[] b; //Array b as float
+
+a = new int[5];  //how many varibles can fit in
+b = new float[10]; 
+
+int[][] a; //zweidimensionales array
+a = new int[3][4];
+int[][] a = {{1,3,5},{3,5,9},etc}
+
+int[][] a = new int[3][]; //für unterschiedliche längen. (sehr selten brauchbar)
+a[0] = new int[4];
+a[1] = new int[2];
+etc.
+
+b = null; //can't find the array of b anymore
+a = b; //greifen jetzt auf den gleichen Array zu, kann über beide variabeln verändert werden
+
+b = (int[]) a.clone(); //koopiert a in b reine
+a.lenght //die länge von a +1
+
+
+char ch = "\u0041" //"\u0041" entspricht "A" im ascicode
+		   // 0*16e3 + 0*16e2 + 4*16e1 + 1*16e0 A-F entsprechen 11-16 im 16 zahlensystem
+
+char bonni = 'c';
+int i = bonni;  //chars können integers zugewiesen werden
+
+10 + (bonni - '0') //ergebniss int, bonni=99 '0'=48 => (99-48) + 10
+
+if (Character.isLetter(bonni)) //true wenn bonni ein Unicode-Buchstabe ist
+"" //for Strings
+'' //for chars
+
+if (s.equals("Hellow")) //kann nurnso direkt verglichen werden
+
+//===================================================
+class Date{         //definition einer Variable
+	int day;
+	String month;
+	int year;
+}
+
+\end{lstlisting}
+
+\end{document}

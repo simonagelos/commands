@@ -1,0 +1,93 @@
+%%% Testing:spacing
+\documentclass[12pt]{article}
+
+
+%\usepackage[showboxes]{textpos}
+
+\hoffset=0pt
+\voffset=0pt
+\oddsidemargin=0pt
+\topmargin=0pt
+\headheight=0pt
+\headsep=0pt
+
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{sistyle}
+\usepackage{textpos}
+
+\setlength{\TPHorizModule}{50pt}
+\setlength{\TPVertModule}{\TPHorizModule}
+
+% geometry
+\usepackage{geometry}
+\geometry{ headsep=20pt,
+headheight=20pt,
+left=21mm,
+top=15mm,
+right=21mm,
+bottom=15mm,
+footskip=20pt,
+includeheadfoot}
+
+%for using code
+\usepackage{listings}
+\usepackage{color}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+\lstset{frame=tb,
+  language=Java,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3
+}
+
+
+% For Multiple Columns within Text
+\usepackage{multicol}
+
+% For Links to Websites
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+} 
+
+%plots
+\usepackage{pgfplots}
+
+%for the table
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs, tabularx}
+\usepackage{caption}
+\captionsetup[table]{position=above, belowskip=4pt}
+\usepackage{ragged2e}
+
+\usepackage{multicol}
+\usepackage{blindtext}
+
+\pagestyle{empty}
+
+%for table with [H]
+\usepackage{float}
+
+\title{Dummi}
+
