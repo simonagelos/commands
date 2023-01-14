@@ -22,6 +22,26 @@
 \setlength{\TPVertModule}{\TPHorizModule}
 
 \pagestyle{empty}
+\usepackage[linktocpage=true]{hyperref}
+
+\hypersetup{%
+unicode,pdffitwindow,
+pdfkeywords = {pdf, LaTeX, hyperref, thumbnails}, 
+pdfauthor = {Brüder Grimm},
+bookmarksopen = true,
+bookmarksnumbered = true,
+pdfcenterwindow=true,
+pdffitwindow = true,
+pdfstartview=FitBV,
+pdfcreator = {pdflatex},
+colorlinks=true, breaklinks=true, %
+urlcolor=magenta, % color for \url
+filecolor=cyan, % color for file
+linkcolor=black, % color for \ref
+citecolor=magenta, %color for \cite
+menucolor=darkblue,
+breaklinks=true,anchorcolor=green
+}
 
 \title{Dummi}
 
@@ -101,6 +121,8 @@
     \item gT - move to the previous tab
     \item \#gt - move to a specific tab number (e.g. 2gt takes you to the second tab)
     \item =G - indents code below
+    \item CTRL-W h - moves in window above, j k l h for other windows
+    \item CTRL-] - in helpfile on maktfiles will open them
 
     \item - /*text* search for *text* in the document, going forward.
     \item n move the cursor to the next instance of the text from the last search. this will wrap to the beginning of the document.
@@ -139,6 +161,7 @@
     \item `y\^` - Yank (copy) everything from the cursor to the start of the line.\\
 
     \item :w  safe the file
+    \item :e filename - opens filename and closes opend file
     \item :tabedit file - opens a new tab and will take you to edit "file"
     \item :tabe "filename" opens file in same terminal 
     \item :tabm i move tab to i beggining with 0
@@ -148,6 +171,11 @@
     \item :w filename safe with new name
     \item :q finish vim if no safe u have to ! for safe
     \item :q! quit without safe
+    \item :split "file" splits window in half on top will be file
+    \item :vslpit "file" "                      " left will be file
+    \item :PlugInstall to re/load new plugins
+    \item \href{https://github.com/junegunn/vim-plug}{pluginmanager}
+
     \item ZZ safe and quit
     \item crl + x + f filenamecomplishen in vim
     \item ;it textit{}
