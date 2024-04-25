@@ -67,7 +67,7 @@
     \hline
     Command & Fuction & Informations \\
     \hline
-    sudo dpkg -i *.deb & install new kernil & do in directory with *.deb kernelfiles \\
+    sudo dpkg -i *.deb & install .deb file or programm \\
     \hline
     ps & shows running processes & \\
     \hline
@@ -139,13 +139,12 @@
     \hline 
     file & shows info about a file \\
     \hline
+    lsusb & list usb devices \\
 
 
 
 \end{tabular}
 
-* \~/schulmaterial/efi/EigeneProjekte/inputoutputflanagan \\
-** \~/schulmaterial/efi/Eigene\_Projekte/inputOutputFlanagan/path-setup 
 
 
 \centering
@@ -185,45 +184,135 @@
     \hline
     >> & appends output into new director/file & doesn't override existing file \\
     \hline
-    tmux & starts a tmux session \\
+    tmux & starts a tmux session &\\
     \hline
-    tmux ls & lists tmux sessions \\
+    tmux ls & lists tmux sessions & \\
     \hline 
-    crtl + b then D & detaches tmux session \\
+    crtl + b , D & detaches tmux session &\\
     \hline
-    zip -r zipname.zip directory1 directory2 file1 ... & to zip files and directory with -r \\
+    crtl + b , p/n & go to previous/next window & \\
     \hline
-
-
-
+    crtl + b, 1 0..0 & switch/select window by number & \\
+    \hline
+    tmux list-sessions & shows active lessions & \\
+    \hline
+    crtl + b, s & "" & \\
+    \hline
+    zip -r zipname.zip directory1 directory2 file1 ... & to zip files and directory with -r & \\
+    \hline
+    f2 or esc to enter BIOS/UEFI -> boot menu & to boot from a external device, than it will also schow up in grub &\\
+    \hline 
+    usb-device & list device conectet &\\
+    \hline
+    ls /etc/apt/sources.list.d & list of repositorys installed via add-apt-repository & \\
+    \hline
+    sudo rm /etc/apt/sources.list.d/name- from-above & to delet a repository without the exact ppa name &\\
+    \hline
+    apt-key list & list keys for ppas &\\
+    \hline
+    sudo do-release-upgrade & updates software to newest Ubuntuversion &\\
+    \hline 
+    sudo do-release-upgrade -c & to see what versions are available &\\
+    \hline
+    apt show "programm" & shows info about the programm &\\
+    \hline
+    gpg -d "file" & to dencrypt file &\\
+    \hline 
+    find . -type f -name '*pattern*' & will find all files in . folder with name pattern, u can change pattern to any patter &\\
+    \hline
+    find . -type f -name '*pattern*' -exec mv \{\} . \; & moves every founde file to . or whereever i want it &\\
+    \hline 
+    fzf & a programm to find paths of files & \\
+    \hline 
+    %lsblk -p | grep "disk\|part" & to find devices that are mountd an can be & \\
+    %\hline 
+    pdfseparate -f 1 -l 5 input.pdf output-page%d.pdf & seperates pdf, 1 and 5 stands for the start and end page
 \end{tabular}
 
-\lstset{language=sh}
-\begin{lstlisting} 
-if [condition]
-then
-    statement 
-fi
+\newpage
 
-if [condition 1]
-then 
-    Statement 1
-elif [condition 2]
-then
-    Statement 2
-else 
-    Statement 3
-fi
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{Bash "Syntax"} \\
+    \hline
+    code & meaning & information\\
+    \hline 
+    mount "device name" "mount point" & mounts device & mount points for example: /mnt/usedrive /media/usb /media/USB \\
+    \hline 
+    bluetoothctl scan on & scans for devices & can also just first bluetoothctl an then do alle the commands \\
+    \hline 
+    bluetoothctl discoverable on & make own devicse discoverable & \\
+    \hline 
+    bluetoothctl pair FC:69:47:7C:9D:A3 & pair with device, thats an example name, if already paired once this is not necesairy & \\
+    \hline 
+    bluetoothctl connect FC:69:47:7C:9D:A3 & to connect to device & \\
+    \hline
+    bluetoothctl paired-devices & shows paired devices &  more commands on \url{https://www.makeuseof.com/manage-bluetooth-linux-with-bluetoothctl/}\\
+    \hline 
+    pandoc DOCUMENT.md -o DOCUMENT.pdf & compiles Markdowndocument to pdf & \\
+    \hline
+    idevicepair pair & pairs iphone &\\
+    \hline
+    ifuse /medie/iphone & mounts iphone to that path &\\
+    \hline
+    ifuse -u /medie/iphone & unmount iphone & \\
+    \hline 
+    convert -resize 50\% picture.jpg newpicture.jpg & picture will downsized to 50\% \\
+    \hline
+    tar -xf file.tar.gz & unzips tar or gz files \\
+    \hline
+    xclip -o > /path/to/file.txt & to put something from clipboard to a file \\
+    \hline 
+    sudo snap remove package\_name & removes snap package \\
+    \hline
+    sudo systemctl status spotifyd.service  & looks if spotifyd.service programm is active \\
+    \hline 
+    spotifyd & start spotifyd api & after that spt will work \\
+    \hline
+    Ctrl + Z & suspends process & \\
+    \hline 
+    jobs & shows what processes are in the background & \\
+    \hline
+    fg \%number & brings process in foreground & number is the number shown when jobs executed \\
+    \hline
+\end{tabular}
+\newpage
 
-\end{lstlisting}
 
+  \lstset{language=sh}
+  \begin{lstlisting} 
+  if [condition]
+  then
+      statement 
+  fi
+
+  if [condition 1]
+  then 
+      Statement 1
+  elif [condition 2]
+  then
+      Statement 2
+  else 
+      Statement 3
+  fi
+
+  \end{lstlisting}
+
+* \~/schulmaterial/efi/EigeneProjekte/inputoutputflanagan \\
+** \~/schulmaterial/efi/Eigene\_Projekte/inputOutputFlanagan/path-setup 
 
 for more information of syntax
 {\url{https://www.gnu.org/software/bash/manual/bash.html#index-insert_002dcomment-_0028M_002d_0023_0029}}
 
 {\url{https://www.tutorialspoint.com/unix/unix-basic-operators.htm}}
 
+Samsung Electronics Co., Ltd GT-I9100 Phone [Galaxy S II] (Download mode)
 
+Problems with PUBLIC-keys on ppa, -> just download ppa again like "sudo add-apt-repository ppa:neovim-ppa/stable" 
+
+after "apt update" u see the repositorys and if they have launchpad in it u can short the ppas easy to there names. 
+
+like "http://ppa.launchpad.net/neovim-ppa/stable/ubuntu" - "ppa:neovim-ppa/stable"
 
 
 

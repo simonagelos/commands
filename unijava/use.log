@@ -2,7 +2,7 @@ This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (prel
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**use.tex
+**/home/liquid/schulmaterial/infoProg/latex/use.tex
 (/home/liquid/schulmaterial/infoProg/latex/use.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
@@ -103,10 +103,10 @@ End of file on the terminal!
  
 Here is how much of TeX's memory you used:
  2165 strings out of 478287
- 30883 string characters out of 5849290
+ 30841 string characters out of 5849290
  326088 words of memory out of 5000000
  20418 multiletter control sequences out of 15000+600000
  469557 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 39i,0n,48p,168b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,0n,48p,210b,262s stack positions out of 5000i,500n,10000p,200000b,80000s
 !  ==> Fatal error occurred, no output PDF file produced!

@@ -92,6 +92,7 @@ breaklinks=true,anchorcolor=green
     \item j moves the cursor down one line.
     \item l moves the cursor one character to the right.
     \item 0 moves the cursor to the beginning of the line.
+    \item \^ move to first non-block character in line. 
     \item \$ moves the cursor to the end of the line.
     \item w move forward one word.
     \item b move backward one word.
@@ -99,6 +100,7 @@ breaklinks=true,anchorcolor=green
     \item äs move to next misspelled word
     \item \$s move to last misspelled word
     \item gg move to the beginning of the file.
+    \item line + G or gg moves curse to line.
     \item `. move to the last edit.
     \item A insert at the end of the line
     \item e  Puts the cursor at the end of a word
@@ -107,6 +109,8 @@ breaklinks=true,anchorcolor=green
     \item ctrl + e  scroll down without cursor
     \item ctrl + p in commandmode will go history upwards
     \item crtl + n "                            " down
+    \item n move the cursor to the next instance of the text from the last search. this will wrap to the beginning of the document.
+    \item n move the cursor to the previous instance of the text from the last search.
     \item d starts the delete operation.
     \item x delets current char
     \item dd will delete the hole line.
@@ -123,15 +127,15 @@ breaklinks=true,anchorcolor=green
     \item =G - indents code below
     \item CTRL-W h - moves in window above, j k l h for other windows
     \item CTRL-] - in helpfile on maktfiles will open them
-
+\end{itemize}
+\begin{itemize}
     \item - /*text* search for *text* in the document, going forward.
-    \item n move the cursor to the next instance of the text from the last search. this will wrap to the beginning of the document.
-    \item n move the cursor to the previous instance of the text from the last search.
     \item ?*text* search for *text* in the document, going backwards.
     \item :\%s/*text*/*replacement text*/g search through the entire document for *text* and puts  *replacement text infront*. without text/g it replace
     \item :\%s/text/replacment/g replace all text
     \item :\%s/*text*/*replacement text*/gc search through the entire document and *confirm* before replacing text.
     \item /+text to be searched | with n move forward trough words | N backwards
+    \item shift + i + text replaces what was marked in visual mode with text 
     \item :nohl to stop marking text
     \item z= on misspelt word for suggestens
     \item zg add misspelt word to dictionary
@@ -147,7 +151,9 @@ breaklinks=true,anchorcolor=green
     \item :"lineNumberStart","lineNumberEnd"s/\^/"replaceItem" /  puts on beggining of the lines between lineNUmberStart and Linenumberend the replaceItem, works with crl-V to
     \item q: shows commandhistory that is executable
     \item \^\$ represents brakes
-
+\end{itemize}
+\begin{itemize}
+    \item K show documentation for thing on cursor, the commant in lua doesnt work yet 
     \item v highlight one character at a time.
     \item V highlight one line at a time.
     \item V< to move selected lines to left.
@@ -159,7 +165,9 @@ breaklinks=true,anchorcolor=green
     \item y\$ yank till the end of the line.
     \item `y\$` - Yank (copy) everything from the cursor to the end of the line.
     \item `y\^` - Yank (copy) everything from the cursor to the start of the line.\\
-
+    \item "+y copys selected data intop clipboard \\
+\end{itemize}
+\begin{itemize}
     \item :w  safe the file
     \item :e filename - opens filename and closes opend file
     \item :tabedit file - opens a new tab and will take you to edit "file"
@@ -173,9 +181,9 @@ breaklinks=true,anchorcolor=green
     \item :q! quit without safe
     \item :split "file" splits window in half on top will be file
     \item :vslpit "file" "                      " left will be file
-    \item :PlugInstall to re/load new plugins
     \item \href{https://github.com/junegunn/vim-plug}{pluginmanager}
-
+\end{itemize}
+\begin{itemize}
     \item ZZ safe and quit
     \item crl + x + f filenamecomplishen in vim
     \item ;it textit{}
@@ -186,7 +194,23 @@ breaklinks=true,anchorcolor=green
     \item ;cen center
     \item ;tb table with [H]
     \item ;bg begin something
+\end{itemize}
 
+tabby movment 
+\begin{itemize}
+    \item "leader"tn next tab
+    \item "leader"tp previous tab
+    \item "leader"to closes all other tabs
+    \item C-t opens new tab
+    \item C-w closes tab 
+    \item "leader"tmp moves tab to previous prosition
+    \item "leader"tmn moves tab to next prosition
+\end{itemize}
+
+Custom/Plugs
+\begin{itemize}
+
+    \item  cdacac
 
 \end{itemize}
 

@@ -1,0 +1,79 @@
+%%% Testing:spacing
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+
+%for title on same page
+\usepackage{titling}
+
+%for \say an more
+\usepackage{dirtytalk}
+
+\usepackage{titlesec}
+
+
+%for spacing
+\usepackage{setspace}
+%\renewcommand{\baselinestretch}{1.5}
+%\onehalfspacing
+\linespread{1.25}
+
+\date{\today}
+
+\usepackage{tikz}
+\usepackage{graphicx}
+\usepackage{esvect}
+\usepackage{sistyle}
+\usepackage{textpos}
+
+\setlength{\TPHorizModule}{50pt}
+\setlength{\TPVertModule}{\TPHorizModule}
+
+
+% no paragraph indent
+\setlength{\parindent}{0em}
+
+%for geometry
+\usepackage{geometry}
+\geometry{ headsep=20pt,
+headheight=20pt,
+left=21mm,
+top=15mm,
+right=21mm,
+bottom=15mm,
+footskip=20pt,
+includeheadfoot}
+
+%for linkt page numbers in table of content
+\usepackage[linktocpage=true]{hyperref}
+
+\hypersetup{%
+unicode,pdffitwindow,
+pdfkeywords = {pdf, LaTeX, hyperref, thumbnails}, 
+pdfauthor = {Brüder Grimm},
+bookmarksopen = true,
+bookmarksnumbered = true,
+pdfcenterwindow=true,
+pdffitwindow = true,
+pdfstartview=FitBV,
+pdfcreator = {pdflatex},
+colorlinks=true, breaklinks=true, %
+urlcolor=magenta, % color for \url
+filecolor=cyan, % color for file
+linkcolor=black, % color for \ref
+citecolor=magenta, %color for \cite
+menucolor=darkblue,
+breaklinks=true,anchorcolor=green
+}
+
+%for math
+\usepackage{amsmath}
+
+
+\title{<++>}
+\author{Simon Hammer}
+
+\begin{document}
+
+
+\end{document}
