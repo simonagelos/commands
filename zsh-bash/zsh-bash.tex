@@ -224,9 +224,14 @@
     \hline 
     fzf & a programm to find paths of files & \\
     \hline 
-    %lsblk -p | grep "disk\|part" & to find devices that are mountd an can be & \\
-    %\hline 
-    pdfseparate -f 1 -l 5 input.pdf output-page%d.pdf & seperates pdf, 1 and 5 stands for the start and end page
+    \%lsblk -p | grep "disk | part" & to find devices that are mountd an can be & \\
+    \hline 
+    pdfseparate -f 1 -l 5 input.pdf output-page\%d.pdf & seperates pdf, 1 and 5 stands for the start and end page & \\
+    \hline
+    top & shows ongion processes with Memory ussage and others & \\
+    \hline
+    free -h & show ussage of RAM with buffer, swap und caches ussage & \\
+    \hline 
 \end{tabular}
 
 \newpage
@@ -274,6 +279,40 @@
     jobs & shows what processes are in the background & \\
     \hline
     fg \%number & brings process in foreground & number is the number shown when jobs executed \\
+    \hline
+\end{tabular}
+
+\section*{TMUX}
+
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    crtl + space & regular prefix for everything in tmux & \\
+    \hline
+    tmux & written in terminal, opens a new tmux session with name 0 & \\
+    \hline
+    tmux new-session -s name & opens new session with "name" & \\
+    \hline 
+    tmux ls & list active tmux sessions on server & \\
+    \hline
+    tmux attach-session -t name & attaches session with set name & \\
+    \hline 
+    prefix + c & opens new window in session & \\
+    \hline
+    prefix + d & detaches session & brings it in the backround \\
+    \hline
+    prefix + shift + \% & splits screen verticaly with new pane to the right & \\
+    \hline
+    prefix + shift + " & " " horrizontaly " " ont the buttom & \\
+    \hline 
+    prefix + x & closes pane\/session & \\
+    \hline 
+    prefix + q & shows nuber for pane & \\
+    \hline 
+    prefix + q + number of pane & changes to set pane & \\
+    \hline
+    prefix + number & changes to window with set number & \\
+    \hline
+    prefix + z & overlases your pane ocver the others & \\
     \hline
 \end{tabular}
 \newpage

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.29)  24 APR 2024 15:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.29)  26 APR 2024 21:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,7 +655,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 123--124
 .\glue(\rightskip) 0.0
 
 [2]
-Overfull \hbox (19.38283pt too wide) in paragraph at lines 143--144
+Overfull \hbox (19.38283pt too wide) in paragraph at lines 144--145
 []\OT1/cmr/m/n/12 s/textreplace/textsubtution [g&](https://www.notion.so/g-4a82
 0f8ef73f420580ed02d2b726782b)
 
@@ -682,14 +682,14 @@ Overfull \hbox (19.38283pt too wide) in paragraph at lines 143--144
 .etc.
 
 [3]
-Underfull \hbox (badness 10000) in paragraph at lines 167--168
+Underfull \hbox (badness 10000) in paragraph at lines 168--169
 
 
 \hbox(0.0+0.0)x471.1093
 .\glue(\rightskip) 0.0
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--169
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
 
 
 \hbox(0.0+0.0)x471.1093
@@ -710,8 +710,8 @@ Here is how much of TeX's memory you used:
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/share/texli
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/
 type1/public/cm-super/sfrm1200.pfb>
-Output written on /home/liquid/schulmaterial/infoProg/vim/vim.pdf (6 pages, 368
-94 bytes).
+Output written on /home/liquid/schulmaterial/infoProg/vim/vim.pdf (6 pages, 369
+32 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  37 compressed objects within 1 object stream
