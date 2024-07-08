@@ -243,6 +243,8 @@
     code & meaning & information\\
     \hline 
     mount "device name" "mount point" & mounts device & mount points for example: /mnt/usedrive /media/usb /media/USB \\
+    \hline
+    fdisk -l & list all the devices and also usb discs & \\
     \hline 
     bluetoothctl scan on & scans for devices & can also just first bluetoothctl an then do alle the commands \\
     \hline 
@@ -280,6 +282,10 @@
     \hline
     fg \%number & brings process in foreground & number is the number shown when jobs executed \\
     \hline
+    jupyter nbconvert --to pdf saturnclou1.ipynb & converts jupyter files to pdf & \\
+    \hline 
+    shred -u & removes not only pointer (rm) to data, it also removes the actual data & \\
+    \hline
 \end{tabular}
 
 \section*{TMUX}
@@ -313,6 +319,8 @@
     prefix + number & changes to window with set number & \\
     \hline
     prefix + z & overlases your pane ocver the others & \\
+    \hline
+    prefix + s & shows open terminals and can change there & \\
     \hline
 \end{tabular}
 \newpage
