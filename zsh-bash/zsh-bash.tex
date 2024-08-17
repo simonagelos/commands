@@ -145,37 +145,9 @@
 
 \end{tabular}
 
+\newpage
 
-
-\centering
 \begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
-    \hline
-    \multicolumn{3}{|c|}{Bash "Syntax"} \\
-    \hline
-    code & meaning & information\\
-    \hline
-    \$"something" & with \$ u access something & \$1 gets first input\\
-    \hline
-    ("Function") & inside () something like find or pwd gos &\\
-    \hline
-    {"Command"} & Command stands for like 1\#\#*/ & in compileInfo it cuts the filename \\
-    \hline
-    \${parameter\#pattern} & shortest match from pattern in parameter from beginning is deleted &\\
-    \hline 
-    \${parameter\#\#pattern} & longest match from pattern in parameter from beginning is deleted & \${1\#\#*/} deletes everything from input bevor the last / \\
-    \hline
-    \${parameter\%pattern} & like \# just from end &\\
-    \hline 
-    \${parameter\%\%pattern} & like \#\# just from the end &\\
-    \hline 
-    " text " & everything in "" will be like String and no commands except \$,',backslash & echo "pdflatex textdummit.tex" output pdflatex textdummi.tex \\
-    \hline
-    ' command/text ' & similar to "" but can use variables & echo "my variable value is '\$variable' " \\
-    \hline 
-    variable=5 & declaring variable as integer 5 & works like in python \\
-    \hline 
-    == != + - * / \% & operator like in java but has also other use &\\
-    \hline 
     mutool draw -R 90 -o out.pdf Tenses.pdf & to rotate clockwise by 90 degree &\\
     \hline 
     ln -fs 'any dircetory' 'direcatory name in pwd' & creates directory linkt the new directory like a portal & \\
@@ -222,24 +194,65 @@
     \hline
     find . -type f -name '*pattern*' -exec mv \{\} . \; & moves every founde file to . or whereever i want it &\\
     \hline 
-    fzf & a programm to find paths of files & \\
+\end{tabular}
+
+
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    mutool draw -R 90 -o out.pdf Tenses.pdf & to rotate clockwise by 90 degree &\\
     \hline 
-    \%lsblk -p | grep "disk | part" & to find devices that are mountd an can be & \\
+    ln -fs 'any dircetory' 'direcatory name in pwd' & creates directory linkt the new directory like a portal & \\
     \hline 
-    pdfseparate -f 1 -l 5 input.pdf output-page\%d.pdf & seperates pdf, 1 and 5 stands for the start and end page & \\
+    > & to redirect output for example in a file & overrides existing file \\
     \hline
-    top & shows ongion processes with Memory ussage and others & \\
+    >> & appends output into new director/file & doesn't override existing file \\
     \hline
-    free -h & show ussage of RAM with buffer, swap und caches ussage & \\
+    tmux & starts a tmux session &\\
+    \hline
+    tmux ls & lists tmux sessions & \\
     \hline 
+    crtl + b , D & detaches tmux session &\\
+    \hline
+    crtl + b , p/n & go to previous/next window & \\
+    \hline
+    crtl + b, 1 0..0 & switch/select window by number & \\
+    \hline
+    tmux list-sessions & shows active lessions & \\
+    \hline
+    crtl + b, s & "" & \\
+    \hline
+    zip -r zipname.zip directory1 directory2 file1 ... & to zip files and directory with -r & \\
+    \hline
+    f2 or esc to enter BIOS/UEFI -> boot menu & to boot from a external device, than it will also schow up in grub &\\
+    \hline 
+    usb-device & list device conectet &\\
+    \hline
+    ls /etc/apt/sources.list.d & list of repositorys installed via add-apt-repository & \\
+    \hline
+    sudo rm /etc/apt/sources.list.d/name- from-above & to delet a repository without the exact ppa name &\\
+    \hline
+    apt-key list & list keys for ppas &\\
+    \hline
+    sudo do-release-upgrade & updates software to newest Ubuntuversion &\\
+    \hline 
+    sudo do-release-upgrade -c & to see what versions are available &\\
+    \hline
+    apt show "programm" & shows info about the programm &\\
+    \hline
+    gpg -d "file" & to dencrypt file &\\
+    \hline 
+    find . -type f -name '*pattern*' & will find all files in . folder with name pattern, u can change pattern to any patter &\\
+    \hline
+    find . -type f -name '*pattern*' -exec mv \{\} . \; & moves every founde file to . or whereever i want it &\\
+    \hline 
+    pdfposter -mA2 example.pdf example-A2-pdfposter.pdf & makes pdf in A2 foramt &\\
+    \hline
+    pdfinfo & schows info of pdf & \\
+    \hline
 \end{tabular}
 
 \newpage
 
 \begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
-    \hline
-    \multicolumn{3}{|c|}{Bash "Syntax"} \\
-    \hline
     code & meaning & information\\
     \hline 
     mount "device name" "mount point" & mounts device & mount points for example: /mnt/usedrive /media/usb /media/USB \\
@@ -286,10 +299,31 @@
     \hline 
     shred -u & removes not only pointer (rm) to data, it also removes the actual data & \\
     \hline
+    fzf & a programm to find paths of files & \\
+    \hline 
+    \%lsblk -p | grep "disk | part" & to find devices that are mountd an can be & \\
+    \hline 
+    pdfseparate -f 1 -l 5 input.pdf output-page\%d.pdf & seperates pdf, 1 and 5 stands for the start and end page & \\
+    \hline
+    pdftk inputfile.pdf cat 1-5 output nameoutputfile.pdf & 1-5 range of pages you want from original pdf, cut pdf & \\
+    \hline
+    top & shows ongion processes with Memory ussage and others & \\
+    \hline
+    free -h & show ussage of RAM with buffer, swap und caches ussage & \\
+    \hline 
+    dd & copy cut file & in ranger \\
+    \hline
+    pp & paste what was cutted & in ranger \\
+    \hline
+    sudo nmcli dev wifi list & shows list of accessable wifis \\
+    \hline
+    sudo nmcli --ask dev wifi connect network-ssid & connect to wifi with name network-ssid and ask for passwort & https://www.makeuseof.com/connect-to-wifi-with-nmcli/ \\
+    \hline
 \end{tabular}
 
 \section*{TMUX}
 
+: means in Commandmode of tmux
 \begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
     \hline
     crtl + space & regular prefix for everything in tmux & \\
@@ -322,9 +356,47 @@
     \hline
     prefix + s & shows open terminals and can change there & \\
     \hline
+    prefix + : & enter commandline for tmux & \\
+    \hline
+    : new & opens new Session & \\
+    \hline
+    : new -s "name" & " " with name as name of session & \\
+    \hline
+    prefix + \$ & rename the session & \\
+    \hline
 \end{tabular}
 \newpage
 
+\centering
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{Bash "Syntax"} \\
+    \hline
+    code & meaning & information\\
+    \hline
+    \$"something" & with \$ u access something & \$1 gets first input\\
+    \hline
+    ("Function") & inside () something like find or pwd gos &\\
+    \hline
+    {"Command"} & Command stands for like 1\#\#*/ & in compileInfo it cuts the filename \\
+    \hline
+    \${parameter\#pattern} & shortest match from pattern in parameter from beginning is deleted &\\
+    \hline 
+    \${parameter\#\#pattern} & longest match from pattern in parameter from beginning is deleted & \${1\#\#*/} deletes everything from input bevor the last / \\
+    \hline
+    \${parameter\%pattern} & like \# just from end &\\
+    \hline 
+    \${parameter\%\%pattern} & like \#\# just from the end &\\
+    \hline 
+    " text " & everything in "" will be like String and no commands except \$,',backslash & echo "pdflatex textdummit.tex" output pdflatex textdummi.tex \\
+    \hline
+    ' command/text ' & similar to "" but can use variables & echo "my variable value is '\$variable' " \\
+    \hline 
+    variable=5 & declaring variable as integer 5 & works like in python \\
+    \hline 
+    == != + - * / \% & operator like in java but has also other use &\\
+    \hline 
+\end{tabular}
 
   \lstset{language=sh}
   \begin{lstlisting} 
