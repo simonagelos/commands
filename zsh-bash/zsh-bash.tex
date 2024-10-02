@@ -97,105 +97,55 @@
     \hline
     ls -s & shows size of files &\\
     \hline
-    pandoc input.md -o output.pdf & compiles Markdown files to pdf\\
+    pandoc input.md -o output.pdf & compiles Markdown files to pdf & \\
     \hline
-    apt-cache pkgnames "beginning of package name"& to see all awailable packages, in "" is optionel and shows just the packages starting with \\
+    apt-cache pkgnames "beginning of package name"& to see all awailable packages, in "" is optionel and shows just the packages starting with &\\
     \hline
-    pushd directory & go in directory \\
+    pushd directory & go in directory & \\
     \hline 
-    popd & when pushd made first us can go back where u were befor \\
+    popd & when pushd made first us can go back where u were befor &\\
     \hline
-    awk & usefull for for outputs \\
+    awk & usefull for for outputs &\\
     \hline 
-    xargs & takes output and puts behind the programm folwing \\
+    xargs & takes output and puts behind the programm folwing &\\
     \hline
-    bluetoothctl & to connect to bluetooth devices \\
+    bluetoothctl & to connect to bluetooth devices &\\
     \hline
-    file "image" & shows some metadata like size and format \\
+    file "image" & shows some metadata like size and format &\\
     \hline
-    find . -type f -name "* *" | while read file; do mv "\$file" \${file// /\_}; done & finds files with space and replaces it with \\
+    find . -type f -name "* *" | while read file; do mv "\$file" \${file// /\_}; done & finds files with space and replaces it with &\\
     \hline
-    perm directory & shows permition from directory \\
+    perm directory & shows permition from directory &\\
     \hline
-     sudo update-alternatives --config python3 & to update python3 verion\\
+    sudo update-alternatives --config python3 & to update python3 verion & \\
     \hline 
-    zip -r newfile.zip folder/ & zips folder in file\\
+    zip -r newfile.zip folder/ & zips folder in file & \\
     \hline
-    jobs & shows process in backgrouns \\
+    jobs & shows process in backgrouns & \\
     \hline 
-    kill \%"number" & kills process with this number \\
+    kill \%"number" & kills process with this number & \\
     \hline
-    sudo update-alternatives --displa java & shows optional java versions and current version\\
+    sudo update-alternatives --displa java & shows optional java versions and current version & \\
     \hline 
-    java -version & shows current java version \\
+    java -version & shows current java version & \\
     \hline
-    javac -version & to see version of java compiler\\
+    javac -version & to see version of java compiler & \\
     \hline 
-    sudo update-alternatives --config java & to change the java version \\
+    sudo update-alternatives --config java & to change the java version & \\
     \hline
-    sudo update-alternatives --config javac & to change the version of the java compiler\\
+    sudo update-alternatives --config javac & to change the version of the java compiler & \\
     \hline
-    sudo apt install openjdk-17-jre & -jdk for java compiler, installs version 17 of java/javac \\
+    sudo apt install openjdk-17-jre & -jdk for java compiler, installs version 17 of java/javac & \\
     \hline 
-    file & shows info about a file \\
+    file & shows info about a file & \\
     \hline
-    lsusb & list usb devices \\
+    lsusb & list usb devices & \\
 
 
 
 \end{tabular}
 
 \newpage
-
-\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
-    mutool draw -R 90 -o out.pdf Tenses.pdf & to rotate clockwise by 90 degree &\\
-    \hline 
-    ln -fs 'any dircetory' 'direcatory name in pwd' & creates directory linkt the new directory like a portal & \\
-    \hline 
-    > & to redirect output for example in a file & overrides existing file \\
-    \hline
-    >> & appends output into new director/file & doesn't override existing file \\
-    \hline
-    tmux & starts a tmux session &\\
-    \hline
-    tmux ls & lists tmux sessions & \\
-    \hline 
-    crtl + b , D & detaches tmux session &\\
-    \hline
-    crtl + b , p/n & go to previous/next window & \\
-    \hline
-    crtl + b, 1 0..0 & switch/select window by number & \\
-    \hline
-    tmux list-sessions & shows active lessions & \\
-    \hline
-    crtl + b, s & "" & \\
-    \hline
-    zip -r zipname.zip directory1 directory2 file1 ... & to zip files and directory with -r & \\
-    \hline
-    f2 or esc to enter BIOS/UEFI -> boot menu & to boot from a external device, than it will also schow up in grub &\\
-    \hline 
-    usb-device & list device conectet &\\
-    \hline
-    ls /etc/apt/sources.list.d & list of repositorys installed via add-apt-repository & \\
-    \hline
-    sudo rm /etc/apt/sources.list.d/name- from-above & to delet a repository without the exact ppa name &\\
-    \hline
-    apt-key list & list keys for ppas &\\
-    \hline
-    sudo do-release-upgrade & updates software to newest Ubuntuversion &\\
-    \hline 
-    sudo do-release-upgrade -c & to see what versions are available &\\
-    \hline
-    apt show "programm" & shows info about the programm &\\
-    \hline
-    gpg -d "file" & to dencrypt file &\\
-    \hline 
-    find . -type f -name '*pattern*' & will find all files in . folder with name pattern, u can change pattern to any patter &\\
-    \hline
-    find . -type f -name '*pattern*' -exec mv \{\} . \; & moves every founde file to . or whereever i want it &\\
-    \hline 
-\end{tabular}
-
 
 \begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
     mutool draw -R 90 -o out.pdf Tenses.pdf & to rotate clockwise by 90 degree &\\
@@ -248,13 +198,6 @@
     \hline
     pdfinfo & schows info of pdf & \\
     \hline
-\end{tabular}
-
-\newpage
-
-\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
-    code & meaning & information\\
-    \hline 
     mount "device name" "mount point" & mounts device & mount points for example: /mnt/usedrive /media/usb /media/USB \\
     \hline
     fdisk -l & list all the devices and also usb discs & \\
@@ -269,6 +212,15 @@
     \hline
     bluetoothctl paired-devices & shows paired devices &  more commands on \url{https://www.makeuseof.com/manage-bluetooth-linux-with-bluetoothctl/}\\
     \hline 
+\end{tabular}
+
+
+\newpage
+
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    code & meaning & information\\
+    \hline 
     pandoc DOCUMENT.md -o DOCUMENT.pdf & compiles Markdowndocument to pdf & \\
     \hline
     idevicepair pair & pairs iphone &\\
@@ -277,15 +229,15 @@
     \hline
     ifuse -u /medie/iphone & unmount iphone & \\
     \hline 
-    convert -resize 50\% picture.jpg newpicture.jpg & picture will downsized to 50\% \\
+    convert -resize 50\% picture.jpg newpicture.jpg & picture will downsized to 50\% &\\
     \hline
-    tar -xf file.tar.gz & unzips tar or gz files \\
+    tar -xf file.tar.gz & unzips tar or gz files &\\
     \hline
-    xclip -o > /path/to/file.txt & to put something from clipboard to a file \\
+    xclip -o > /path/to/file.txt & to put something from clipboard to a file &\\
     \hline 
-    sudo snap remove package\_name & removes snap package \\
+    sudo snap remove package\_name & removes snap package &\\
     \hline
-    sudo systemctl status spotifyd.service  & looks if spotifyd.service programm is active \\
+    sudo systemctl status spotifyd.service  & looks if spotifyd.service programm is active &\\
     \hline 
     spotifyd & start spotifyd api & after that spt will work \\
     \hline
@@ -315,16 +267,26 @@
     \hline
     pp & paste what was cutted & in ranger \\
     \hline
-    sudo nmcli dev wifi list & shows list of accessable wifis \\
+    sudo nmcli dev wifi list & shows list of accessable wifis &\\
     \hline
     sudo nmcli --ask dev wifi connect network-ssid & connect to wifi with name network-ssid and ask for passwort & https://www.makeuseof.com/connect-to-wifi-with-nmcli/ \\
     \hline
+    sensors & shows heat of elements & \\
+    \hline
+    ffmpeg –i example.mp4 –c:a copy –c:v copy –map\_metadata -1 example\_modified.mp4 >\& /dev/null & removes metadata from video & have not used like this \\
+    \hline
+    exiftool -all= file & removes all metadat from file & \\
+    \hline 
+    exiftool file & shows metadat & \\
+    \hline
+    psql -h [HOSTNAME] -p [PORT] -U [USERNAME] -W -d [DATABASENAME] & to conecct to database by psql & \\
+    \hline
 \end{tabular}
 
-\section*{TMUX}
 
-: means in Commandmode of tmux
 \begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{TMUX} \\
     \hline
     crtl + space & regular prefix for everything in tmux & \\
     \hline
@@ -365,6 +327,8 @@
     prefix + \$ & rename the session & \\
     \hline
 \end{tabular}
+ :means in Commandmode of tmux
+
 \newpage
 
 \centering
