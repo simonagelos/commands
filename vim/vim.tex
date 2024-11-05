@@ -52,30 +52,6 @@ breaklinks=true,anchorcolor=green
 \setlength{\parskip}{30pt}
 \setlength{\baselineskip}{20pt}
 
-% Make sure that all text appears precisely where it ought to.  The
-% above dimensions mean that text appears in round-number locations.
-%
-% The \showbox puts detailed calculations in the log file
-%
-% Output of 'dvireport -F -up t5.dvi':
-% c 97[a] 0,20pt
-% c 121[y] 4.72223,20pt
-% c 98[b] 0,28.8889pt
-% c 121[y] 5.27777,28.8889pt
-% c 99[c] 50,76.25pt
-% c 100[d] 0,70pt
-% c 121[y] 5.55556,70pt
-%
-% The most important thing is that `a' and `d' are 50pt
-% apart, \parskip+\baselineskip
-%
-% This test may not currently be working (2005 August 30).  There's an
-% extra 30pt (\parskip) appearing before the by and cy in their boxes,
-% which clearly isn't present in the t5.correct.dvi.  Ought it to be
-% there?  Have I done something (when?) which has caused this to
-% spuriously appear?
-
-
 \showboxdepth=8
 \showboxbreadth=8
 %\documentclass[12pt]{article}
@@ -97,8 +73,6 @@ breaklinks=true,anchorcolor=green
     \item w move forward one word.
     \item b move backward one word.
     \item G move to the end of the file.
-    \item äs move to next misspelled word
-    \item \$s move to last misspelled word
     \item gg move to the beginning of the file.
     \item line + G or gg moves curse to line.
     \item `. move to the last edit.
@@ -109,6 +83,7 @@ breaklinks=true,anchorcolor=green
     \item ctrl + e  scroll down without cursor
     \item ctrl + p in commandmode will go history upwards
     \item crtl + n "                            " down
+    \item in NERDTree use s to open file horiyontaly and i verticaly
     \item n move the cursor to the next instance of the text from the last search. this will wrap to the beginning of the document.
     \item n move the cursor to the previous instance of the text from the last search.
     \item d starts the delete operation.
@@ -127,6 +102,7 @@ breaklinks=true,anchorcolor=green
     \item =G - indents code below
     \item CTRL-W h - moves in window above, j k l h for other windows
     \item CTRL-] - in helpfile on maktfiles will open them
+    \item <space> j or k - opens new buffer in direction of key 
 \end{itemize}
 \begin{itemize}
     \item - /*text* search for *text* in the document, going forward.
@@ -148,7 +124,7 @@ breaklinks=true,anchorcolor=green
     \item :! + command "makes commmand in terminal bvut beeing in vim
     \item gt switches tabs
     \item :setlocal spell spelllang=de sets spell checking in german local buffer with just :set it is global
-    \item :set nospell turns off spell checking
+    \item <F5> turns off spell checking
     \item :"lineNumberStart","lineNumberEnd"s/\^/"replaceItem" /  puts on beggining of the lines between lineNUmberStart and Linenumberend the replaceItem, works with crl-V to
     \item q: shows commandhistory that is executable
     \item \^\$ represents brakes
@@ -160,6 +136,7 @@ breaklinks=true,anchorcolor=green
     \item V< to move selected lines to left.
     \item V> to move selected lines to right.
     \item Ctrl-V highlight by columns.
+    \item \# in normal mode highlights all the strings i am hovering in the file 
     \item p paste text on the current line.
     \item P paste before the cursor.
     \item y yank text into the copy buffer.
@@ -184,6 +161,11 @@ breaklinks=true,anchorcolor=green
     \item :vslpit "file" "                      " left will be file
     \item \href{https://github.com/junegunn/vim-plug}{pluginmanager}
     \item :Telescope notify opens history off notifications
+    \item :Dbee opens tabs for database access, the connection angaben are in lua/database.lua
+    \item in Dbee, select query, BB executes thes quiry
+    \item ]s or [s go to prev/next spellerror
+    \item zg adds wrong word to custom list of words
+    \item ]d/[d go to next/prev error
 
 \end{itemize}
 \begin{itemize}
@@ -205,9 +187,10 @@ tabby movment
     \item "leader"tp previous tab
     \item "leader"to closes all other tabs
     \item C-t opens new tab
-    \item C-w closes tab 
+    \item C-s closes tab 
     \item "leader"tmp moves tab to previous prosition
     \item "leader"tmn moves tab to next prosition
+    \item :help window-moving shows comands for moving windows 
 \end{itemize}
 
 Custom/Plugs
@@ -227,6 +210,10 @@ lsp, codehelp
     \item :Telescope notify shows history of notifications 
     \item "leader"v finding file with telescope
     \item "leader"s source file
+    \item gr hover over word in java, shows you evry usage
+    \item gd "  ", go to defenition
+    \item :LSPinfo gives info about running language server 
+
 \end{itemize}
 
 

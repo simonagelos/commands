@@ -140,9 +140,6 @@
     file & shows info about a file & \\
     \hline
     lsusb & list usb devices & \\
-
-
-
 \end{tabular}
 
 \newpage
@@ -212,6 +209,8 @@
     \hline
     bluetoothctl paired-devices & shows paired devices &  more commands on \url{https://www.makeuseof.com/manage-bluetooth-linux-with-bluetoothctl/}\\
     \hline 
+    wc & programm that can count lines, character etc in txt files & \\
+    \hline 
 \end{tabular}
 
 
@@ -261,6 +260,8 @@
     \hline
     top & shows ongion processes with Memory ussage and others & \\
     \hline
+    bashtop & show ongion process but better then top & \\
+    \hline
     free -h & show ussage of RAM with buffer, swap und caches ussage & \\
     \hline 
     dd & copy cut file & in ranger \\
@@ -281,12 +282,37 @@
     \hline
     psql -h [HOSTNAME] -p [PORT] -U [USERNAME] -W -d [DATABASENAME] & to conecct to database by psql & \\
     \hline
+    newgrp docker & to log in into groupe (permission) docker where i can execute docker without sudo &\\
+    \hline
+    act & runs github actions localy with docker & need .github/workflows/file.yml \\
+    \hline
+    find /path/to/directory -type f -size +1G & finds files bigger the 1GB in path &\\
+    \hline
+    ollama run llama3.2 & runs ollama AI &\\
+    \hline
+    docker run -it ubuntu bash & downloads newest ubuntu image, runs it in bash & \\
+    \hline 
+    veracrypt --mount <<fileToMount>>  & mounts file to path & 
+    recommended /media/liquid/vera \\
+    \hline 
+    veracrypt -d & umounts file & \\
+    \hline
+    uname -a & shows all the kernel infos & \\
+    \hline 
+    ip addr show & shows ip adress of all devices & can add specific name of device \\
+    \hline 
+    du -sh directory & shows size of directory & \\
+    \hline
 \end{tabular}
 
 
 \begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
     \hline
     \multicolumn{3}{|c|}{TMUX} \\
+    \hline
+    prefix = CRTL + a & this is the current prefix &\\
+    \hline
+    prefix = CRTL + a & this is the current prefix &\\
     \hline
     crtl + space & regular prefix for everything in tmux & \\
     \hline
@@ -326,8 +352,31 @@
     \hline
     prefix + \$ & rename the session & \\
     \hline
+    prefix + ; & Toggle last active pane, goes to last active pane &\\
+    \hline
+    Alt + H or L & moves between windows & \\
+    \hline 
+    prefix + ä & loads configs new & \\
+    \hline
+    prefix + Ctrl + s & safes tmux sessions & \\
+    \hline 
+    prefix + Ctrl + r & restore safe sessions & \\
+        \hline
 \end{tabular}
  :means in Commandmode of tmux
+\newpage
+
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
+    \hline
+    \multicolumn{3}{|c|}{RANGER} \\
+    \hline
+    :open\_with programm & opens file I hover with programm I want it to open  the file & \\
+    \hline
+    m <key> & marks directory as bookmark, key can be anything & \\
+    \hline
+    ' <key> & gets u to bookmark & \\
+    \hline
+\end{tabular}
 
 \newpage
 
