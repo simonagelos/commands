@@ -131,7 +131,7 @@
     \hline
     javac -version & to see version of java compiler & \\
     \hline 
-    sudo update-alternatives --config java & to change the java version & \\
+   sudo update-alternatives --config java & to change the java version & \\
     \hline
     sudo update-alternatives --config javac & to change the version of the java compiler & \\
     \hline
@@ -140,6 +140,9 @@
     file & shows info about a file & \\
     \hline
     lsusb & list usb devices & \\
+    \hline
+    inkscape -p baeldung\_logo.png -o output\_baeldung.svg  & convert png to svg \\
+    \hline 
 \end{tabular}
 
 \newpage
@@ -272,7 +275,7 @@
     \hline
     sudo nmcli --ask dev wifi connect network-ssid & connect to wifi with name network-ssid and ask for passwort & https://www.makeuseof.com/connect-to-wifi-with-nmcli/ \\
     \hline
-    sensors & shows heat of elements & \\
+    sensors & shows heat of cpu& \\
     \hline
     ffmpeg –i example.mp4 –c:a copy –c:v copy –map\_metadata -1 example\_modified.mp4 >\& /dev/null & removes metadata from video & have not used like this \\
     \hline
@@ -283,6 +286,11 @@
     psql -h [HOSTNAME] -p [PORT] -U [USERNAME] -W -d [DATABASENAME] & to conecct to database by psql & \\
     \hline
     newgrp docker & to log in into groupe (permission) docker where i can execute docker without sudo &\\
+
+\end{tabular}
+
+\newpage
+\begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
     \hline
     act & runs github actions localy with docker & need .github/workflows/file.yml \\
     \hline
@@ -305,10 +313,27 @@
     \hline
     nslookup <<servername>> & shows ip adress of servername & \\ 
     \hline
-    iwd & programm to cinecct to wifi & \\
-        \hline
+    sudo ifconfig enx00e04cebfbd5 192.168.0.4 netmask 255.255.255.0 & set ip adress for (sub)network & enx00e04cebfbd5 = networkdevice \\
+                                                                                                    &&192.168.0.4 = new ip adress \\
+                                                                                                    &&255.255.255.0 = mask \\
+    \hline
+    pdfjam --outfile out.pdf --paper a4paper in.pdf & makes pdf to a4 & \\
+    \hline 
+    lazygit & opens a programming managing git/github & \\
+    \hline
+    vproject & opens txt files with project ideas to customize my laptop & \\ 
+    \hline
+    qrencode -s 6 -l H -o "wifi.png" "WIFI:T:WPA;S:<SSID>;P:<PSWD>;;" & wlanlogin to qrcode, did not work with me & \\ 
+    \hline
+    z tor and ./star... & opens tor in tor-browser & \\
+    \hline
+    idevicebackup2 -i encryption on & start encryption mode for backup & \\
+    \hline
+    idevicebackup2 backup --full /path/to/backup/ & make backup of iphone & \\
+    \hline
 \end{tabular}
 
+%% writting line ===========================================
 
 \begin{tabular}{| p{6.5cm} | p{6.5cm} | p{6.5cm} |}
     \hline
@@ -387,6 +412,8 @@
     \multicolumn{3}{|c|}{ARCH} \\
     \hline
     startx & starts xininit which starts awsome & \\
+    \hline
+    iwd & programm to cinecct to wifi & \\
     \hline
 \end{tabular}
 \newpage

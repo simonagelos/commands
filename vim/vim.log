@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.29)  6 NOV 2024 00:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.3.29)  19 FEB 2025 12:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **vim.tex
-(/home/liquid/schulmaterial/infoProg/vim/vim.tex
+(/home/liquid/doc/infoProg/vim/vim.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21>
 (/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
@@ -533,7 +533,7 @@ File: l3backend-pdftex.def 2022-01-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count293
 \l__pdf_internal_box=\box62
 )
-(/home/liquid/schulmaterial/infoProg/vim/vim.aux)
+(/home/liquid/doc/infoProg/vim/vim.aux)
 \openout1 = `vim.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 48.
@@ -640,12 +640,11 @@ LaTeX Info: Redefining \ref on input line 48.
 LaTeX Info: Redefining \pageref on input line 48.
 LaTeX Info: Redefining \nameref on input line 48.
 
-(/home/liquid/schulmaterial/infoProg/vim/vim.out)
-(/home/liquid/schulmaterial/infoProg/vim/vim.out)
+(/home/liquid/doc/infoProg/vim/vim.out) (/home/liquid/doc/infoProg/vim/vim.out)
 \@outlinefile=\write4
 \openout4 = `vim.out'.
 
- [1
+[1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 Underfull \hbox (badness 10000) in paragraph at lines 98--99
@@ -681,28 +680,14 @@ Overfull \hbox (19.38283pt too wide) in paragraph at lines 120--121
 .\OT1/cmr/m/n/12 t
 .etc.
 
-[3]
-Underfull \hbox (badness 10000) in paragraph at lines 145--146
-
-
-\hbox(0.0+0.0)x471.1093
-.\glue(\rightskip) 0.0
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 146--147
-
-
-\hbox(0.0+0.0)x471.1093
-.\glue(\rightskip) 0.0
-
-[4] [5] [6] [7] (/home/liquid/schulmaterial/infoProg/vim/vim.aux)
+[3] [4] [5] [6] [7] (/home/liquid/doc/infoProg/vim/vim.aux)
 Package rerunfilecheck Info: File `vim.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
  19414 strings out of 478287
- 367094 string characters out of 5849289
- 640672 words of memory out of 5000000
+ 366964 string characters out of 5849289
+ 640674 words of memory out of 5000000
  37282 multiletter control sequences out of 15000+600000
  473999 words of font info for 47 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -711,8 +696,8 @@ Here is how much of TeX's memory you used:
 ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf/fonts/type1/
 public/cm-super/sfrm1200.pfb>
-Output written on /home/liquid/schulmaterial/infoProg/vim/vim.pdf (7 pages, 460
-18 bytes).
+Output written on /home/liquid/doc/infoProg/vim/vim.pdf (7 pages, 46184 bytes).
+
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
